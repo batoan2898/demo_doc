@@ -1,8 +1,8 @@
--version: '3'
-  services:
+version: '3'
+services:
   nodejs:
-  build: .
-  ports:
+    build: .
+    ports:
     - "80:80"
-  volumes:
+    volumes:
     - ./:/home/node/server

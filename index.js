@@ -26,6 +26,10 @@ app.get('/list',function (req, res){
   res.json(todos)
 })
 
+app.get('/',function (req, res){
+  res.sendFile(__dirname + "/index.html")
+})
+
 app.listen(3000)
 
 

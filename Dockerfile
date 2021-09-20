@@ -1,12 +1,7 @@
-FROM node:13-alpine
+FROM node:13-apline
 
-WORKDIR /usr/src/app
-
-COPY package*.json ./
-
-RUN npm install
-
-COPY . .
+WORKDIR /home/node/server
 
 EXPOSE 80
+
 CMD [ "node", "index.js" ]

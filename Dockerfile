@@ -1,4 +1,4 @@
-FROM node:13-apline
+FROM node:13-alpine
 
 WORKDIR /home/node/server
 
